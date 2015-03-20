@@ -1,7 +1,7 @@
 package app;
 
-import vista.VistaResultadoDescarga;
 import vista.VistaDescargas;
+import vista.VistaResultadoDescarga;
 import controlador.ControladorDescargas;
 
 public class Init {
@@ -13,7 +13,7 @@ public class Init {
 				try {
 					VistaDescargas vistaDescarga = new VistaDescargas();
 					VistaResultadoDescarga resultadoDescarga = new VistaResultadoDescarga();
-					ControladorDescargas controlador = new ControladorDescargas(vistaDescarga, resultadoDescarga);
+					new ControladorDescargas(vistaDescarga, resultadoDescarga);
 					vistaDescarga.getFrame().setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
